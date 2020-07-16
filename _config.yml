@@ -1,1 +1,41 @@
-theme: jekyll-theme-cayman
+# Site settings
+title: Belive3
+description: 'Belive3 - a developer.'
+# url:
+# baseurl: '/'
+
+author:
+  name: 'belive3'
+  email: lmbelive2@163.com
+  # twitter_username: 
+  # facebook_username: 
+  github_username:  belive3
+  # linkedin_username:  
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
